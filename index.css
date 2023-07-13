@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .forms{
     margin-top: 15%;
@@ -15,27 +17,42 @@
     align-items: center;
     justify-content: center;
     position: fixed;
+    
 }
 .sirname{
     padding: 1em;
+    width: 100%;
+    justify-content: stretch;
 }
 .month{
     padding: 1em;
+    width: 100%;
+    justify-content: stretch;
 }
 .day{
     padding: 1em;
+    width: 100%;
+    justify-content: stretch;
 }
 .sir{
     padding: .8em;
+    width: 100%;
+    justify-content: stretch;
 }
 .month{
     padding: .8em;
+    width: 100%;
+    justify-content: stretch;
 }
 .btn{
     padding: .8em;
+    width: 100%;
+    justify-content: stretch;
 }
 .date{
     padding: .8em;
+    width: 100%;
+    justify-content: stretch;
 }
 
 .heading{
