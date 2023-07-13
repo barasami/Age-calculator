@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.forms{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+.sirname{
+    padding: 1em;
+}
+.month{
+    padding: 1em;
+}
+.day{
+    padding: 1em;
+}
+.sir{
+    padding: .8em;
+}
+.month{
+    padding: .8em;
+}
+.btn{
+    padding: .8em;
+}
+.date{
+    padding: .8em;
+}
+
+.heading{
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: goldenrod;
+    margin-bottom: 1em;
+}
