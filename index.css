@@ -10,6 +10,14 @@
     height: 100vh;
     margin-left: 20%;
     margin-right: 20%;
+    
+}
+.display{
+    background-image: url(./images/hands.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
 }
 .forms{
     margin-top: 15%;
@@ -48,6 +56,7 @@
     padding: .8em;
     width: 100%;
     justify-content: stretch;
+    color: goldenrod;
 }
 .date{
     padding: .8em;
