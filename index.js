@@ -7,7 +7,6 @@ let btn=document.querySelector('.btn')
 let sirName=document.querySelector('.sir')
 let month=document.querySelector('.monthdata')
 let date=document.querySelector('.date')
-let years=document.querySelector('.years')
 let old=document.querySelector('.old')
 
 let allToday=document.getElementById("today")
@@ -39,20 +38,17 @@ btn.addEventListener('click',()=>{
         return
     }
 
-    //get Month
+    //get Month and year
     let sMonth=month.value
-    if(sMonth === '' || sMonth === null){
+    let getcalcYear=Number((sMonth.slice(0,4)));//year
+    let getcalcMonth=Number((sMonth.slice(5,7)));//month
+    if(getcalcYear === '' || getcalcYear === null){
         return
     }
-    else if(sMonth < 1 || sMonth > 12){
+    else if(getcalcYear < 1 || getcalcYear > allyear){
         return
     }
-    else{
-        let getcalcYear=Number((sMonth.slice(0,4)));//year
-        let getcalcMonth=Number((sMonth.slice(5,7)));//month
-
-        console.log(getcalcMonth);
-    }
+    
     
 
     //get Date
@@ -66,16 +62,8 @@ btn.addEventListener('click',()=>{
     else{
         console.log(sDate);
     }
-    
-
-    //get Year
-    let syear=years.value
-    if(syear === '' || syear > allyear){
-        return
-    }
-    // console.log(syear);
-
-    let calcYears=allyear-syear
+ 
+    let calcYears=allyear-getcalcYear
 
 
     old.innerHTML=`Hi ${sName} you are ${calcYears} Years Old`
