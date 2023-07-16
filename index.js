@@ -19,7 +19,7 @@ let tod=new Intl.DateTimeFormat('en-us',{
 
 let allyear=today.getFullYear()
 let alltoday=today.getMonth()+1
-console.log(alltoday);
+
 
 let todaysDate=(tod.format(today))
 
@@ -45,7 +45,14 @@ btn.addEventListener('click',()=>{
     if(getcalcYear === '' || getcalcYear === null){
         return
     }
-    else if(getcalcYear < 1 || getcalcYear > allyear){
+    else if(getcalcYear < 1000 || getcalcYear > allyear){
+        return
+    }
+
+    if(getcalcMonth === '' || getcalcMonth === null){
+        return
+    }
+    else if(getcalcMonth < 1 || getcalcMonth > 12){
         return
     }
     
