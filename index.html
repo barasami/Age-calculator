@@ -9,18 +9,25 @@
 <body class="display">
     <div class="body">
         <div class="forms">
-            <h3 class="heading">Age calculator</h3>
+            <h2 class="heading">Age calculator</h2>
+            <h3 id="today"></h3>
             <div class="sirname">
                 <input type="text" placeholder="Sir Name" class="sir" required/>
+            </div>
+            <div class="year">
+                <input type="number" min="1900" max="2099" class="years" step="1" placeholder="Year" />
             </div>
             <div class="month">
                 <input type="month" class="monthdata" required/>
             </div>
             <div class="day">
-                <input type="text" class="date"  required  placeholder="Day"/>
+                <input type="number" class="date"  required  placeholder="Day"/>
             </div>
             <div class="day">
                 <button class="btn">Calculate</button>
+            </div>
+            <div class="old">
+
             </div>
         </div>
     </div>

@@ -27,6 +27,14 @@
     position: fixed;
     
 }
+#today{
+    margin-top: .2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .2em;
+    color:goldenrod;
+}
 .sirname{
     padding: 1em;
     width: 100%;
@@ -42,7 +50,26 @@
     width: 100%;
     justify-content: stretch;
 }
+.old{
+    padding: 1em;
+    width: 100%;
+    justify-content: stretch;
+    color:white;
+    font-family:cursive;
+    font-weight: lighter;
+
+}
 .sir{
+    padding: .8em;
+    width: 100%;
+    justify-content: stretch;
+}
+.years{
+    padding: .8em;
+    width: 100%;
+    justify-content: stretch;
+}
+.year{
     padding: .8em;
     width: 100%;
     justify-content: stretch;
