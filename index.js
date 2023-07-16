@@ -18,10 +18,12 @@ let tod=new Intl.DateTimeFormat('en-us',{
 })
 
 let allyear=today.getFullYear()
-let alltoday=today.getMonth()+1
+let allmonth=today.getMonth()+1
 
 
 let todaysDate=(tod.format(today))
+
+
 
 
 allToday.innerHTML=`${todaysDate}`
@@ -66,11 +68,25 @@ btn.addEventListener('click',()=>{
     else if(sDate < 1 || sDate > 31){
         return
     }
-    else{
-        console.log(sDate);
-    }
+
+    let getToday=Number(todaysDate.slice(5,7));
  
     let calcYears=allyear-getcalcYear
+    let calcMonths=allmonth-getcalcMonth
+    let calcDay=getToday-sDate
+
+    if(calcMonths < 1){
+        calcMonths * -1
+        console.log(calcMonths);
+    }
+
+    if(calcDay < 1){
+        calcDay * -1
+        console.log(calcDay);
+    }
+
+    
+    
 
 
     old.innerHTML=`Hi ${sName} you are ${calcYears} Years Old`
