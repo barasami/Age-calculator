@@ -75,22 +75,20 @@ btn.addEventListener('click',()=>{
     let calcMonths=allmonth-getcalcMonth
     let calcDay=getToday-sDate
 
-    if(calcMonths < 1){
-        calcMonths * -1
-        console.log(calcMonths);
-    }
-
-    if(calcDay < 1){
-        calcDay * -1
-        console.log(calcDay);
-    }
-
-    
     
 
-
-    old.innerHTML=`Hi ${sName} you are ${calcYears} Years Old`
-
+    if (calcYears > 1) {
+        old.innerHTML=`Hi ${sName} you are ${calcYears} Years Old`
+    }
+    else if(calcMonths > 0 || calcMonths * -1 > 0 ){
+        old.innerHTML=`Hi ${sName} you are ${calcMonths} Months Old`
+    }
+    else if(calcDay > 0 || calcDay * -1 > 0 ){
+        old.innerHTML=`Hi ${sName} you are ${calcDay} Days Old`
+    }
+    else{
+        old.innerHTML=`Capture correct details !!!!`
+    }
     
 })
 
