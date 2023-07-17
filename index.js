@@ -80,15 +80,15 @@ btn.addEventListener('click',()=>{
         return
     }
     else{
-        old.innerHTML=`Hi ${sName} you are ${calcMonths * -1} Months Old`
+        old.innerHTML=`Hi ${sName} you are ${calcMonths * -1} Months Old !!!`
     }
 
     if(calcDay > 0 ){
-        old.innerHTML=`Hi ${sName} you are ${calcDay} Days Old`
+        old.innerHTML=`Hi ${sName} you are ${calcDay} Days Old !!!`
         return
     }
     else{
-        old.innerHTML=`Hi ${sName} you are ${calcDay * -1} Days Old`
+        old.innerHTML=`Hi ${sName} you are ${calcDay * -1} Days Old !!!`
         return
     }
     
