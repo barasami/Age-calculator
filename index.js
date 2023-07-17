@@ -23,13 +23,7 @@ let allmonth=today.getMonth()+1
 
 let todaysDate=(tod.format(today))
 
-
-
-
 allToday.innerHTML=`${todaysDate}`
-
-
-
 
 
 btn.addEventListener('click',()=>{
@@ -50,6 +44,7 @@ btn.addEventListener('click',()=>{
     else if(getcalcYear < 1000 || getcalcYear > allyear){
         return
     }
+    
 
     if(getcalcMonth === '' || getcalcMonth === null){
         return
@@ -57,8 +52,7 @@ btn.addEventListener('click',()=>{
     else if(getcalcMonth < 1 || getcalcMonth > 12){
         return
     }
-    
-    
+
 
     //get Date
     let sDate=date.value
@@ -75,21 +69,27 @@ btn.addEventListener('click',()=>{
     let calcMonths=allmonth-getcalcMonth
     let calcDay=getToday-sDate
 
-    
 
     if (calcYears > 1) {
         old.innerHTML=`Hi ${sName} you are ${calcYears} Years Old`
+        return
     }
-    else if(calcMonths > 0 || calcMonths * -1 > 0 ){
+
+    if(calcMonths > 0 ){
         old.innerHTML=`Hi ${sName} you are ${calcMonths} Months Old`
-    }
-    else if(calcDay > 0 || calcDay * -1 > 0 ){
-        old.innerHTML=`Hi ${sName} you are ${calcDay} Days Old`
+        return
     }
     else{
-        old.innerHTML=`Capture correct details !!!!`
+        old.innerHTML=`Hi ${sName} you are ${calcMonths * -1} Months Old`
+    }
+
+    if(calcDay > 0 ){
+        old.innerHTML=`Hi ${sName} you are ${calcDay} Days Old`
+        return
+    }
+    else{
+        old.innerHTML=`Hi ${sName} you are ${calcDay * -1} Days Old`
+        return
     }
     
 })
-
-
